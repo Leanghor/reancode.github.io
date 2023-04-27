@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
+.container-fliud {
+    position: relative;
+}
+.container-fliud > img {
+    width: 100vw;
+    height: 500px;
+}
+.container-fliud .bg {
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    padding-top: 50px;
+    background-color: rgba(0, 0, 0, 0.785);
+}
+.container-fliud .bg .img {
+    margin-left: 10%;
+}
+.container-fliud .bg .img > img {
+    width: 150px;
+    height: 150px;
+} 
+.container-fliud .bg .menu {
+    margin-left: 10%;
+    display: flex;
+}
+.container-fliud .bg .menu > #openMenu {
+    margin-top: 7px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.container-fliud .bg .menu > #cloesMenu {
+    position: absolute;
+    margin-top: 7px;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: none;
+}
+.container-fliud .bg .menu .bar_menu > a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 20px;
+    font-family: 'Slabo 27px', serif;
+    opacity: .5;
+    color: white;
+}
+.container-fliud .bg .menu .bar_menu > a:hover{
+    opacity: 1;
+    transition: all 0.2s ease;
+}
+.container-fliud .bg .input{
+    position: relative;
+    margin-left: 10%;
+    width: 350px;
+    height: 40px;
+    display: flex;
+    border: none;
+    caret-color: blue;
+}
+.container-fliud .bg .input > input {
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    border: none;
+    outline-color: greenyellow;
+}
+.container-fliud .bg .input i{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: greenyellow;
+    cursor: pointer;
+}
+
+.container-fliud .main_slide {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+}
+.container-fliud .main_slide img {
+    width: 100%;
+    height: 500px;
+}
+.card-article {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 500px;
+    margin: 0 auto; 
+    margin-top: 18%;
+}
+.card-article .card-box{
+    width: 30%;
+    height: 100%;
+
+}
+.card-article .card-box .image{
+    width: 100%;
+    height: 40%;
+    border: 3px greenyellow solid;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+}
+.card-article .card-box .image > img {
+    width: 45%;
+    height: 90%;
+    border-radius: 50%;
+    border: 2px rgb(72, 255, 0) solid;
+}
+.card-article .card-box .text{
+    width: 100%;
+    height: 60%;
+}
+.card-article .card-box .text > p {
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.button {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #34974d;
+    background-color: #3aa856;
+  }
+  
+  .button, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+  
+  .button .button__text {
+    transform: translateX(30px);
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: #34974d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button .svg {
+    width: 30px;
+    stroke: #fff;
+  }
+  
+  .button:hover {
+    background: #34974d;
+  }
+  
+  .button:hover .button__text {
+    color: transparent;
+  }
+  
+  .button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .button:active .button__icon {
+    background-color: #2e8644;
+  }
+  
+  .button:active {
+    border: 1px solid #2e8644;
+  }
